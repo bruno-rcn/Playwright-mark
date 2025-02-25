@@ -1,0 +1,71 @@
+Playwright eXpress
+------------------
+
+site da ferramenta: https://playwright.dev/docs/intro
+
+Preparando o ambiente
+- Visual Studio Code
+	- plugins: One dark pro, Material Icon Theme, 
+- Git for windows .org
+- Node.js LTS 22.14.0
+	- para validar a intalacao: node --version - e depois - npm --version
+		ou node --version && npm --version
+- Abrir o cmd em modo administrador e digitar: corepack enable (vai habilitar as features do node que vem por padrao desabilitadas)
+- Feche o cmd e va para o git bash e rode: yarn --version (sera o que iremos utilizer no curso)
+- Windows Terminal
+
+Obs:
+- para rodar os testes: yarn playwright test
+- para rodar em um browser especifico: yarn playwright test --project=chromium
+- para rodar uma suite especifica passa o nome dela: yarn playwright test name_suite
+- para debugar: yarn playwright test --debug
+
+Ele vai executar por padrao em todos os browsers - para ver isso esta no arquivo playwright.config.ts - projects
+
+para ver o relatorio apos o fim dos testes: yarn playwright show-report
+	tambem pode ser feito com npx no lugar de yarn
+
+
+Montar o ambiente de teste:
+Pasta API:
+- Pelo terminal ir ate o diretorio de api dentro de apps e rodar yarn install ou npm install
+
+- Para criar a iniciar o banco de dados: yarn db:init (ou npm run db:init)
+	vai iniciar a estrutura do banco de dados da aplicacao
+
+- Para colocar a api no ar: yarn dev (ou npm run dev)
+
+Pasta Web:
+- Pelo terminal ir ate o diretorio de web dentro de apps e rodar yarn install ou npm install
+
+- Depois rodar yarn dev no terminal
+
+
+- Quando reiniciar o computador deve seguir os passos:
+	abrir o terminal e acessar a pasta da api do projeto em apps: yarn dev ou npm run dev
+	abrir um outro terminal e acessar a pasta de web em apps: yarn dev ou npm run dev
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
